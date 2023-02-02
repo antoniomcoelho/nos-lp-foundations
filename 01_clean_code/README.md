@@ -22,6 +22,19 @@ After this lesson you should:
 - Learn how to start refactoring your current codebase,
 - Antipatterns to avoid.
 
+### NOTES:
+- Fast coding is coding well
+- Smaller codes (small functions)
+- Let readers know what a function does clearly and easily (small codes)
+- Exctract functions until their maximum (functions on functions on functions) - Question: how small should they be? Should they be in the same file or another file? 2-4 lines of code usually, maybe 6 sometimes?
+- Smallness also implies:
+  * functiosn should not be large enough to hold nested structures
+  * indent level of a function should not be higher than two
+- Not many arguments (3-4) - create objects/data structures as arguments
+- No boolean arguments. If it is needed for an if/else, separate this into two different functions [Video](https://youtu.be/7EmboKQH8lM?t=4394)
+- Use exceptions
+- Don't duplicate code
+
 ## Uncle Bob - Clean code lesson 2 (1:06)
 
 [Link to video](https://www.youtube.com/watch?v=2a_ytyt9sf8)
