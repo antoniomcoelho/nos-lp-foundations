@@ -47,6 +47,13 @@ After this lesson you should:
 - Know about _lying comments_ and when _not_ to write comments,
 - Be able to reveal your intent while naming things.
 
+### Notes:
+- Use comments when the code does not explain itself
+- Have a good name for functions instead of having comments
+- Warning comments of consequences
+- No redundant comments (i.e. explaining simple things that do not need to be explained or are already explained by the code itself)
+- Use explanatory code
+
 ## Python Type Checking (Guide) (1:40)
 
 ![RealPython cover](../images/4b3cc00ea7b463fb46c2dfbe07beab3d6e708384e6938b82cc3e4f65767da9e2.png)  
