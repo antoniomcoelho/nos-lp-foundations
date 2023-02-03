@@ -53,6 +53,12 @@ After this lesson you should:
 - Warning comments of consequences
 - No redundant comments (i.e. explaining simple things that do not need to be explained or are already explained by the code itself)
 - Use explanatory code
+- Don't check in commented code
+- Lines usually 30-40 characters, max max 120
+- The name of a variable should tell its significance
+- No number series in variables
+- Destinguish names clearly
+- Reviewing code should take roughly the same time as writing it
 
 ## Python Type Checking (Guide) (1:40)
 
