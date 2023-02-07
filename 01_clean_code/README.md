@@ -75,6 +75,55 @@ After this lesson you should:
 - Be able to create type aliases,
 - Know how to run a static type checker like `mypy`.
 
+### Notes:
+* def headline(text: str, align: bool = True) -> str:
+  - The text: str syntax says that the text argument should be of type str. Similarly, the optional align argument should have type bool with the default value True. Finally, the -> str notation specifies that headline() will return a string. In terms of style, PEP 8 recommends the following:
+    - Use normal rules for colons, that is, no space before and one space after a colon: text: str.
+    - Use spaces around the = sign when combining an argument annotation with a default value: align: bool = True.
+    - Use spaces around the -> arrow: def headline(...) -> str.
+  - Adding type hints like this has no runtime effect: they are only hints and are not enforced on their own. For instance, if we use a wrong type for the (admittedly badly named) align argument, the code still runs without any problems or warnings
+ 
+* A few rules of thumb on whether to add types to your project are:
+  - If you are just beginning to learn Python, you can safely wait with type hints until you have more experience.
+  - Type hints add little value in short throw-away scripts.
+  - In libraries that will be used by others, especially ones published on PyPI, type hints add a lot of value. Other code using your libraries need these type hints to be properly type checked itself. For examples of projects using type hints see cursive_re, black, our own Real Python Reader, and Mypy itself.
+  - In bigger projects, type hints help you understand how types flow through your code, and are highly recommended. Even more so in projects where you cooperate with others.
+  - In his excellent article The State of Type Hints in Python Bernát Gábor recommends that “type hints should be used whenever unit tests are worth writing.”
+
+* Annotations:
+```
+>>> nothing: str
+>>> nothing
+NameError: name 'nothing' is not defined
+
+>>> __annotations__
+{'nothing': <class 'str'>}
+``` 
+
+* Pyhon types - Part 1:
+
+´´´
+>>> from typing import Dict, List, Tuple
+
+>>> names: List[str] = ["Guido", "Jukka", "Ivan"]
+>>> version: Tuple[int, int, int] = (3, 7, 1)
+>>> options: Dict[str, bool] = {"centered": False, "capitalize": True}
+´´´
+
+´´´
+def create_deck(shuffle: bool = False) -> List[Tuple[str, str]]:
+
+    """Create a new deck of 52 cards"""
+
+    deck = [(s, r) for r in RANKS for s in SUITS]
+
+    if shuffle:
+
+        random.shuffle(deck)
+
+    return deck
+´´´
+
 ## 7 Python Code Smells (0:22)
 
 ![Arjan Codes YouTube cover](../images/186f8c6d5b3ee296613d84f8b1b5a304ca39034a513d79bcd09688ef91f8b6cb.png)
