@@ -135,3 +135,21 @@ This video shows 7 code smells that point to poor design decisions, as well as h
 After this lesson you should:
 
 - Have a better idea of things to look out for when reviewing other people' codes. But we will cover more ground in the following modules.
+
+### Notes:
+* Imprecise types - for example, instead of using "role: string" use a vector of possibilities using enum!
+ 
+[imagem](https://user-images.githubusercontent.com/84011886/217835770-16c5ceea-d138-4860-ba5f-73c051849778.png)
+![imagem](https://user-images.githubusercontent.com/84011886/217835948-b877daa8-5867-4f50-8da0-47b8242d405c.png)
+![imagem](https://user-images.githubusercontent.com/84011886/217836122-2d9c488f-97f9-412f-a682-66fa543b2adb.png)
+
+* Code duplication
+* Built-in functions
+* Vague identifiers - put units in the names (?)
+* Use booleans to make a function do two jobs - instead use two different functions
+* If not using the exception function, just remove it
+
+![imagem](https://user-images.githubusercontent.com/84011886/217841727-f23d43f4-b4e9-48cf-9c9f-03d797c29e28.png)
+
+
+
